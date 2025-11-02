@@ -179,6 +179,7 @@ function Dashboard() {
           </div>
           <div className="flex flex-col border rounded-md border-gray-500 p-3">
             <div className=" flex items-center justify-between">
+              
               <div className="flex items-center rounded-md p-2 border gap-x-2 border-gray-300 justify-center">
                 <CiSearch size={30} />
                 <input
@@ -188,6 +189,11 @@ function Dashboard() {
                 />
               </div>
               <div className="flex items-center justify-center gap-x-3">
+                <button onClick={()=>{
+                    localStorage.removeItem("token")
+                    localStorage.setItem("auth","false")
+                    navigate("/login")
+                }} className='mx-5 bg-red-100 text-red-500 text-xl rounded-xl font-bold border-2 border-red-500 py-3 px-4 '>Logout</button>
                 <div className="flex text-lg items-center justify-center text-white font-light py-3 px-4 gap-3 rounded-md bg-gradient-to-r from-blue-500 to-purple-600 ">
                   <IoIosAddCircleOutline size={28} />
                   <p>Add New Employee</p>
@@ -307,7 +313,7 @@ function Dashboard() {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

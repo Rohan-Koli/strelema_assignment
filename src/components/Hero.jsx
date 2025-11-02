@@ -11,9 +11,9 @@ function Hero() {
           sell they west hard for the.
         </div>
         <div className=' flex items-center justify-start gap-8'>
-          <button className='bg-orange-500 rounded-md shadow-md text-white p-3.5'> Find out more</button>
+          <button className='bg-[#F2994A] rounded-md shadow-md text-white p-3.5'> Find out more</button>
           <div className=' flex items-center justify-center gap-4 text-xl'>
-            <button><IoPlaySharp className=' bg-orange-500 rounded-full p-3 size-12 text-white' /></button>
+            <button><IoPlaySharp className=' bg-[#DF6951] rounded-full p-3 size-12 text-white' /></button>
             <p className=' font-semibold text-gray-500'>Play Demo</p>
           </div>
         </div>

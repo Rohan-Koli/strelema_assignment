@@ -20,7 +20,7 @@ function Home() {
           alt="decore"
         />
       </div>
-      <div className="min-w-7xl z-10 mx-auto flex flex-col items-center justify-center bg-transparent">
+      <div className="min-w-7xl z-10 mx-auto flex gap-y-8 flex-col items-center justify-center bg-transparent">
         <Narbar />
         <Hero />
         <Services />
